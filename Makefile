@@ -10,12 +10,12 @@ mult: $(obj)
 
 run:mult
 	
-	@echo > res.txt;\
+	echo > res.txt;\
 	for i in 1 2 4 8 16 32;\
 	do ./mult $$i >> res.txt;\
 	done;\
-    python process.py;\
-    exit 0;\ 
+	python process.py;\
+	exit 0;\ 
 	
 
 
