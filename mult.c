@@ -113,5 +113,9 @@ main (int argc, char **argv)
   long long totaltime =
     ((ts2.tv_sec * SEC2NANO + ts2.tv_nsec) -
      (ts.tv_sec * SEC2NANO + ts.tv_nsec));
+
   printf ("%d ; %f\n", nbr_thread, totaltime / SEC2NANO);
+
+  return 0;
+
 }
